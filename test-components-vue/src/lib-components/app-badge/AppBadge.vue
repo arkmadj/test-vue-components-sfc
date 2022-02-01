@@ -23,7 +23,7 @@ export default {
     },
     bgColor: {
       type: String,
-      default: 'rgba(0, 204, 102, 0.1)'
+      default: ''
     },
     color: {
       type: String,

@@ -1,22 +1,20 @@
 {
   "name": "@zultan/test-components-vue-sfc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "test-components-vue",
   "productName": "test components vue",
   "author": "ahmadjinadu@gmail.com",
   "private": false,
-
+  "repository": "github.com:<arkmadj>/test-vue-components-sfc",
   "main": "dist/test-components-vue.ssr.js",
   "browser": "dist/test-components-vue.esm.js",
   "module": "dist/test-components-vue.esm.js",
   "unpkg": "dist/test-components-vue.min.js",
-
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
   "sideEffects": false,
-
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "prebuild": "rimraf ./dist",
@@ -25,10 +23,10 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-
   "dependencies": {
+    "chart.js": "^3.7.0",
+    "vue-chartkick": "^1.1.0"
   },
-
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
