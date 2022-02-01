@@ -3,11 +3,12 @@ import { defineComponent } from "vue";
 import AppBadge from "../src/lib-components/app-badge/AppBadge.vue";
 import AppLineChart from "../src/lib-components/app-line-chart/AppLineChart.vue";
 import GraphCard from "../src/lib-components/app-graph-card/GraphCard.vue";
+import AppCircularProgressBar from "../src/lib-components/app-circular-progress-bar/AppCircularProgressBar.vue"
 // Uncomment import and local "components" registration if library is not registered globally.
 // import { TestComponentsVueSample } from '@/entry.esm';
 
 export default defineComponent({
-	components: { AppBadge, AppLineChart, GraphCard },
+	components: { AppBadge, AppLineChart, GraphCard, AppCircularProgressBar },
 	name: "ServeDev",
 	setup() {
 		return {
@@ -60,5 +61,6 @@ export default defineComponent({
 			</template>
 		</graph-card>
 		<app-line-chart lineColor="#ffcc00" :data="data" />
+		<app-circular-progress-bar :percentage="50"/>
 	</div>
 </template>

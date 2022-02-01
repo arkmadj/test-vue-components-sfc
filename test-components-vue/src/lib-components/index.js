@@ -1,5 +1,11 @@
-/* eslint-disable import/prefer-default-export */
-// export { default as TestComponentsVueSample } from './test-components-vue-sample.vue';
-export {default as AppBadge} from './app-badge/AppBadge.vue';
-export {default as AppLineChart} from './app-line-chart/AppLineChart';
-export {default as GraphCard} from './app-graph-card/GraphCard';
+export { default as AppAreaChart } from "./app-area-chart/AppAreaChart";
+export { default as AppBadge } from "./app-badge/AppBadge.vue";
+export { default as AppButton } from "./app-button/AppButton.vue";
+export { default as AppCircularProgressBar } from "./app-circular-progress-bar/AppCircularProgressBar";
+export { default as AppFileInput } from "./app-file-input/AppFileInput";
+export { default as GraphCard } from "./app-graph-card/GraphCard";
+export { default as AppInput } from "./app-input/AppInput";
+export { default as AppLineChart } from "./app-line-chart/AppLineChart";
+export { default as AppSelect } from "./app-select/AppSelect";
+// export { default as AppTable } from "./app-table/AppTable";
+export { default as AppToggle } from "./app-toggle/AppToggle";
